@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<style>
+  .jumbotron {
+    margin-bottom: 0px;
+    background-color: #800080; /* Dark purple color */
+    color: #800080; /* White color for text */
+  }
+
+  .jumbotron a.btn-info {
+    background-color: #800080; /* Dark purple color */
+    border-color: #800080; /* Dark purple color */
+  }
+
+  .jumbotron a.btn-info:hover {
+    background-color: #4B0082; /* Darker shade of dark purple on hover */
+    border-color: #4B0082; /* Darker shade of dark purple on hover */
+  }
+</style>
+
+<body>
+  {% include "exam/navbar.html" %}
+  <br>
+  <section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center">
+    <div class="container text-center">
+      <h2 class="display-3">Online Examination System</h2>
+      <p class="display-4 d-none d-sm-block">Attend your examinations online!</p>
+      <p class="lead">Sign Up now to start your first online examination</p>
+
+      <p><strong> Start Your Journey Here:</strong></p>
+      <a href="/student/studentsignup" class="btn btn-lg btn-info" style="padding-right: 35px; border-radius: 0%;"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Sign Up as Student</a>
+
+      <br><br><br>
+    </div>
+  </section>
+  {% include "exam/footer.html" %}
+
+</body>
+
+</html>
